@@ -23,5 +23,15 @@ namespace Training_Program_Cirkus
         {
             this.cirkusPrincess = cirkusPrincess;
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("+-----------------------+");
+            sb.Append("| Brand:");
+            sb.Append("\t");
+            sb.Append("\t|");
+            return sb.ToString();
+        }
     }
 }

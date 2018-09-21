@@ -8,9 +8,17 @@ namespace Training_Program_Cirkus
 {
     class Clown
     {
-        public Clown()
+        public string FirstName = "The Clown";
+        public string SecondName;
+
+        public Clown(string SecondName)
         {
-            Console.WriteLine("Clown!!!!");
+            this.SecondName = SecondName;
+        }
+
+        public override string ToString()
+        {
+            return this.SecondName + ", " + this.FirstName;
         }
     }
 }

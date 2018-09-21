@@ -11,11 +11,14 @@ namespace Training_Program_Cirkus
         static void Main(string[] args)
         {
             Cirkus cirkus = new Cirkus();
-            Clown clown = new Clown();
-            CirkusPrincess cirkusPrincess = new CirkusPrincess();
+            Clown clown = new Clown("Bobo");
+            CirkusPrincess cirkusPrincess = new CirkusPrincess("Sumini", 21, true);
 
             cirkus.HireClown(clown);
             cirkus.HirePrincess(cirkusPrincess);
+
+            Console.WriteLine(clown);
+            Console.WriteLine(cirkusPrincess);
 
         }
     }
