@@ -10,6 +10,13 @@ namespace Training_Program_Cirkus
     {
         static void Main(string[] args)
         {
+            Cirkus cirkus = new Cirkus();
+            Clown clown = new Clown();
+            CirkusPrincess cirkusPrincess = new CirkusPrincess();
+
+            cirkus.HireClown(clown);
+            cirkus.HirePrincess(cirkusPrincess);
+
         }
     }
 }
